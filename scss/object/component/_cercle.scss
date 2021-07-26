@@ -1,0 +1,16 @@
+.c-cercle{
+    margin:0 auto;
+    width: 230px;
+    height: 230px;
+    border: 6px solid;
+    border-color: black;
+    border-radius: 50%;
+    background:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i{
+        color: black;
+        font-size: 7em;
+    }
+}

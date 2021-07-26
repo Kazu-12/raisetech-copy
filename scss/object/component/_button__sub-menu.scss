@@ -1,0 +1,42 @@
+.c-button__sub{
+    display: none;
+    @include pcs{
+        position: relative;
+        top: -48px;
+        margin-left: auto;
+        display: block;
+        width: 50px;
+        height: 100%;
+        transition: all .3s;
+    }
+    .sub-hor{
+        position: absolute;
+        display: block;
+        height: 2px;
+        width: 24px;
+        top: 23px;
+        left: 12px;
+        background-color: #000;
+    }
+    .sub-ver{
+        position: absolute;
+        display: block;
+        height: 24px;
+        width: 2px;
+        top: 12px;
+        left: 23px;
+        background-color: #000;
+        transition: all .3s;
+    }
+}
+
+.menu-list.open{
+    .main-menu.open{
+        .c-button__sub{
+            background-color: rgb(245, 245, 245);
+        }
+        .sub-ver{
+            display: none;
+        }
+    }
+}

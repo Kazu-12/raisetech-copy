@@ -1,0 +1,31 @@
+$pcl: 1280px;   //TOP文言非表示
+$pcm: 1260px;   //TOPメニュー隙間変更
+$pcs: 1200px;   //TOPメニュー＞ハンバーガーメニュー
+$tab: 1080px;   //中央コンテンツ並び替え
+$sm:  767px;    //縦配列
+
+@mixin pcl {
+    @media (max-width: ($pcl)){
+        @content;
+    }
+}
+@mixin pcm {
+    @media (max-width: ($pcm)){
+        @content;
+    }
+}
+@mixin pcs {
+    @media (max-width: ($pcs)){
+        @content;
+    }
+}
+@mixin tab {
+    @media (max-width: ($tab)){
+        @content;
+    }
+}
+@mixin sm {
+    @media (max-width: ($sm)){
+        @content;
+    }
+}
